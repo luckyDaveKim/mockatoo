@@ -1,0 +1,11 @@
+node_modules
+dist
+*.log
+.DS_Store
+workflows/
+
+# data/ 는 sample.json 만 git 으로 관리
+data/*
+!data/sample.json
+package-lock.json
+.playwright-mcp/

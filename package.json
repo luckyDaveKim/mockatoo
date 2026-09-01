@@ -1,0 +1,49 @@
+{
+  "name": "mockatoo",
+  "version": "0.0.1",
+  "description": "JSON 파일 기반 가벼운 mock API 서버",
+  "license": "MIT",
+  "type": "module",
+  "packageManager": "pnpm@10.33.0",
+  "engines": { "node": ">=20" },
+  "bin": { "mockatoo": "dist/cli/index.js" },
+  "main": "dist/core/index.js",
+  "types": "dist/core/index.d.ts",
+  "exports": {
+    ".": { "types": "./dist/core/index.d.ts", "import": "./dist/core/index.js" }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc -p tsconfig.json && vite build --config src/web/vite.config.ts",
+    "typecheck": "tsc -p tsconfig.json --noEmit && tsc -p src/web/tsconfig.json --noEmit",
+    "test": "vitest run",
+    "lint": "eslint .",
+    "dev": "tsx src/cli/index.ts start -n sample",
+    "dev:web": "vite --config src/web/vite.config.ts"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^9.0.0",
+    "@fastify/cors": "^10.0.0",
+    "@fastify/static": "^8.0.0",
+    "chokidar": "^4.0.0",
+    "commander": "^12.0.0",
+    "fastify": "^5.0.0",
+    "handlebars": "^4.7.8",
+    "yaml": "^2.9.0",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.3.0",
+    "eslint": "^9.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0",
+    "typescript-eslint": "^8.0.0",
+    "vite": "^6.0.0",
+    "vitest": "^3.0.0"
+  }
+}
