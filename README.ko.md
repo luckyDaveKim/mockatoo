@@ -8,6 +8,18 @@ JSON 파일 기반 mock API 서버. 어드민 UI 포함.
 
 ![mockatoo admin](docs/screenshots/01-overview.png)
 
+## Live demo
+
+설치 없이 바로 써볼 수 있다 (Render 무료 인스턴스라 첫 요청은 깨어나는 데 시간이 걸릴 수 있다):
+
+- 어드민: [https://mockatoo.onrender.com/__admin/](https://mockatoo.onrender.com/__admin/)
+- Mock API: [https://mockatoo.onrender.com/users](https://mockatoo.onrender.com/users) · [https://mockatoo.onrender.com/users/1](https://mockatoo.onrender.com/users/1)
+
+```sh
+curl https://mockatoo.onrender.com/users/1
+# {"id":"1","name":"Kyle Hills","email":"Kyle.Hills@yahoo.com"}
+```
+
 ## Getting started
 
 ```sh

@@ -8,6 +8,18 @@ Lightweight mock API server backed by JSON files, with an admin UI.
 
 ![mockatoo admin](docs/screenshots/01-overview.png)
 
+## Live demo
+
+Try it without installing anything (free Render instance — the first request may take a moment to wake up):
+
+- Admin UI: [https://mockatoo.onrender.com/__admin/](https://mockatoo.onrender.com/__admin/)
+- Mock API: [https://mockatoo.onrender.com/users](https://mockatoo.onrender.com/users) · [https://mockatoo.onrender.com/users/1](https://mockatoo.onrender.com/users/1)
+
+```sh
+curl https://mockatoo.onrender.com/users/1
+# {"id":"1","name":"Kyle Hills","email":"Kyle.Hills@yahoo.com"}
+```
+
 ## Getting started
 
 ```sh
