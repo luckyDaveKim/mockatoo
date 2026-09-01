@@ -4,6 +4,8 @@
 
 JSON 파일 기반 mock API 서버. 어드민 UI 포함.
 
+> **mock** + **cockatoo**(앵무새) — 앵무새처럼, 가르쳐 준 응답을 그대로 따라 말한다.
+
 ![mockatoo admin](docs/screenshots/01-overview.png)
 
 ## Getting started

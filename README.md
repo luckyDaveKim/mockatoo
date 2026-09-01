@@ -4,6 +4,8 @@
 
 Lightweight mock API server backed by JSON files, with an admin UI.
 
+> **mock** + **cockatoo** — like a cockatoo, it repeats back whatever responses you teach it.
+
 ![mockatoo admin](docs/screenshots/01-overview.png)
 
 ## Getting started
