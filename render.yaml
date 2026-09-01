@@ -1,0 +1,12 @@
+# Render Blueprint — https://render.com/docs/blueprint-spec
+# Render 대시보드에서 New → Blueprint 로 이 레포를 연결하면 아래 설정대로 배포된다.
+services:
+  - type: web
+    name: mockatoo
+    runtime: docker
+    plan: free
+    healthCheckPath: /__admin/api/status
+    envVars:
+      # Dockerfile CMD 가 4000 포트로 리슨하므로 Render 라우팅도 4000 으로 지정
+      - key: PORT
+        value: "4000"
